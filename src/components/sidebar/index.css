@@ -1,0 +1,86 @@
+.sidebarContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1E1C;
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebarOption{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.optionIcon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 576px){
+    .sidebarContainer{
+        display: none;
+    }
+
+    .mobile-sidebarContainer{
+        display: block;
+        color: white;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px){
+    .sidebarContainer{
+        width: 130px;
+        padding: 10px;
+    }
+
+    a{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .mobile-sidebarContainer{
+        display: none;
+    }
+}
+
+@media (min-width: 993px){
+    .mobile-sidebarContainer{
+        display: none;
+    }
+}
+
+.hamburgerMenuButton{
+    background-color: #333333;
+    color: #77F534;
+    border: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+}
+
+.menu{
+    background-color: #1A1E1C;
+}
+
+.menu-item{
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}

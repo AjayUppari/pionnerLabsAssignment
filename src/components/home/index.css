@@ -1,0 +1,87 @@
+.mainContianer{
+    background-color: #0B0B0B;
+}
+
+.welcomeHeading{
+    color: #97AE3A;
+}
+
+.homeContainer{
+    display: flex;
+    position: relative;
+    background-color: #0B0B0B;
+}
+
+.populationChartContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphItem{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 550px;
+    border-radius: 10px;
+    background-color: #171717;
+    margin-bottom: 20px;
+}
+
+.active{
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px){
+    .homeContainer{
+        display: none;
+    }
+    .mobile-homeContainer{
+        display: block;
+        background-color: #0B0B0B;
+    }
+
+    .populationChartContainer{
+        width: 100vw;
+    }
+
+    .graphItem{
+        width: 300px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px){
+    .mobile-homeContainer{
+        display: none;
+    }
+    .homeContainer{
+        display: block;
+    }
+
+    .populationChartContainer{
+        width: 100vw;
+        margin-left: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
+
+    .graphItem{
+        width: 400px;
+    }
+}
+
+@media (min-width: 993px){
+    .mobile-homeContainer{
+        display: none;
+    }
+    .homeContainer{
+        display: block;
+    }
+}
